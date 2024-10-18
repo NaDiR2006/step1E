@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Driving Experience JSON</title>
+        <script>
+            let driving_experiences = [
+                {
+                    id_drivingExp: 1,
+                    date: "2024-10-16",
+                    departure_time: "16:00",
+                    arrivalTime: "20:40",
+                    kms: 100,
+                    id_weather: 4,
+                    id_traffic: 3,
+                    id_road: 2,
+                },
+                {
+                    id_drivingExp: 2,
+                    date: "2024-10-17",
+                    departure_time: "12:00",
+                    arrivalTime: "19:30",
+                    kms: 400,
+                    id_weather: 2,
+                    id_traffic: 3,
+                    id_road: 1,
+                },
+                {
+                    id_drivingExp: 3,
+                    date: "2024-10-18",
+                    departure_time: "09:00",
+                    arrivalTime: "10:00",
+                    kms: 90,
+                    id_weather: 1,
+                    id_traffic: 1,
+                    id_road: 2,
+                },
+            ];
+
+            let weather = [
+                { id_weather: 1, weather: "Sunny" },
+                { id_weather: 2, weather: "Cloudy" },
+                { id_weather: 3, weather: "Rainy" },
+                { id_weather: 4, weather: "Foggy" },
+                { id_weather: 5, weather: "Snowy" },
+            ];
+
+            let traffic = [
+                { id_traffic: "1", traffic: "No traffic" },
+                { id_traffic: "2", traffic: "Light traffic" },
+                { id_traffic: "3", traffic: "Normal traffic" },
+                { id_traffic: "4", traffic: "Heavy traffic" },
+            ];
+
+            let road_type = [
+                { id_road: "1", roadSurface: "Asphalt" },
+                { id_road: "2", roadSurface: "Dirt" },
+                { id_road: "3", roadSurface: "Ice" },
+            ];
+            console.log("User experiences", driving_experiences);
+            console.log("Weather conditions", weather);
+            console.log("Traffic", traffic);
+            console.log("Road", road_type);
+        </script>
+    </head>
+    <body></body>
+</html>
